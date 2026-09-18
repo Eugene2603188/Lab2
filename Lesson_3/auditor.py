@@ -38,9 +38,10 @@ def calculate_tax(amount):
     tax_amount = amount * tax_rate
     return tax_amount
 
-def generate_report(total_units, failed_attempts):
-    print("Total Unit Processed:", total_units)
-    print("Number of Failed/Rejected Entries:", failed_attempts)
+def generate_report(inventory, fail):
+    print("Total Unit Processed:", inventory)
+    print("Number of Failed/Rejected Entries:", fail)
+
 
 while (stock != "quit"):
     stock = input("Enter stock quantity: ")
@@ -50,7 +51,6 @@ while (stock != "quit"):
     inventory = process_delivery(int(inventory), int(stock))
 
 generate_report(inventory, fail)
-
 
 #Eugene Repo URL: https://github.com/Eugene2603188/Lab2
 
