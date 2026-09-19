@@ -8,7 +8,6 @@ def get_valid_input():
     global stock
 
     if stock.isdigit():
-        print("Pass")
         return stock
     else:
         if stock != "quit":
@@ -52,5 +51,5 @@ while (stock != "quit"):
 
 generate_report(inventory, fail)
 
-#Eugene Repo URL: https://github.com/Eugene2603188/Lab2
+#Eugene Repo URL: https://github.com/Eugene2603188/Lab3
 
